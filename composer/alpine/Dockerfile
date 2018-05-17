@@ -1,5 +1,7 @@
 FROM php:7.1-alpine
 
+MAINTAINER doanhpv
+
 RUN apk --no-cache --update add curl openssl
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
