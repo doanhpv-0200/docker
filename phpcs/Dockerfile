@@ -1,4 +1,4 @@
-FROM doanhpv/composer:latest
+FROM composer:latest
 
 ENV PHPCS_VERSION=3.5.8
 
@@ -14,7 +14,3 @@ RUN ln -s /root/.composer/vendor/bin/phpcs /usr/local/bin/phpcs \
     && apk del git
 
 WORKDIR /var/www/laravel
-
-# ENTRYPOINT ["phpcs"]
-
-# CMD ["--version"]
