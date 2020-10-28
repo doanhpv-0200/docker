@@ -1,12 +1,6 @@
-FROM doanhpv/composer
+FROM doanhpv/composer:latest
 
-MAINTAINER doanhpv
-
-# phpcs version 3.2.3
-ENV PHPCS_VERSION=3.2.3
-
-# framgia-php-codesniffer version 0.2.0
-ENV FRAMGIA_CODESNIFFER_VERSION=0.2.0
+ENV PHPCS_VERSION=3.5.8
 
 RUN apk --no-cache --update add git
 
@@ -21,5 +15,6 @@ RUN ln -s /root/.composer/vendor/bin/phpcs /usr/local/bin/phpcs \
 
 WORKDIR /var/www/laravel
 
-ENTRYPOINT ["phpcs"]
-CMD ["--version"]
+# ENTRYPOINT ["phpcs"]
+
+# CMD ["--version"]

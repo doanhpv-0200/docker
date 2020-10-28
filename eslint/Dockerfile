@@ -1,6 +1,4 @@
-FROM node:8.11-alpine
-
-MAINTAINER doanhpv
+FROM node:8.11
 
 RUN npm i -g eslint eslint-plugin-react babel-eslint
 
