@@ -14,3 +14,7 @@ RUN ln -s /root/.composer/vendor/bin/phpcs /usr/local/bin/phpcs \
     && apk del git
 
 WORKDIR /var/www/laravel
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
+CMD ["composer"]
