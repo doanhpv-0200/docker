@@ -32,6 +32,6 @@ RUN apk del --purge .build-deps
 
 WORKDIR /var/www/laravel
 
-ENTRYPOINT ["/root/.composer/vendor/bin/phpunit"]
+# ENTRYPOINT ["/root/.composer/vendor/bin/phpunit"]
 
-CMD ["--help"]
+# CMD ["--help"]
