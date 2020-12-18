@@ -1,4 +1,4 @@
-FROM doanhpv/composer
+FROM composer:latest
 
 MAINTAINER doanhpv
 
